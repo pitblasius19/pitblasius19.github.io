@@ -4,7 +4,6 @@ const cars = [
     { name: 'Porsche 944', isAvailable: true },
     { name: 'BMW 330D', isAvailable: false },
     { name: 'Skoda', isAvailable: true },
-    { name: 'Audi', isAvailable: true },
 ];
 
 
