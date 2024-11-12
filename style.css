@@ -1,0 +1,76 @@
+/* Dark background with contrasting light text */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark gray */
+    color: #e0e0e0; /* Light gray text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1e1e1e; /* Darker container background */
+    padding: 25px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #80cbc4; /* Light teal for the header text */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #2a2a2a; /* Dark gray for each item */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+li:hover {
+    background-color: #333333; /* Slightly lighter on hover */
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.available {
+    background: linear-gradient(135deg, #66bb6a, #43a047); /* Green gradient for available */
+}
+
+button.unavailable {
+    background: linear-gradient(135deg, #ef5350, #e53935); /* Red gradient for unavailable */
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
